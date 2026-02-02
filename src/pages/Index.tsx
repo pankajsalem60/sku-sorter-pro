@@ -1,11 +1,18 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import PdfUploader from "@/components/PdfUploader";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <div className="min-h-screen bg-background flex flex-col items-center justify-center p-6">
+      <div className="w-full max-w-lg">
+        <div className="text-center mb-8">
+          <h1 className="text-2xl font-semibold text-foreground mb-2">
+            Meesho SKU Sorter
+          </h1>
+          <p className="text-muted-foreground text-sm">
+            Upload your packing PDF to extract and sort SKUs
+          </p>
+        </div>
+        <PdfUploader />
       </div>
     </div>
   );
